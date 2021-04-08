@@ -199,7 +199,8 @@ FakesAssemblies/
 *.opt
 
 # Custom ignores
-gallery.xml
-project.lock.json
-/Samples/Win7Samples/multimedia/directshow/capture/amcap/AmCap.vcxproj
-/Samples/Win7Samples/multimedia/directshow/capture/amcap/AmCap.vcxproj.filters
+*.tlog
+*.filters
+*.vcxproj
+*.recipe
+*.idb
