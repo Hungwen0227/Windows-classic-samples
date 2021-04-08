@@ -2660,6 +2660,9 @@ void ChooseDevices(IMoniker *pmVideo, IMoniker *pmAudio)
         if(gcap.rgpmAudioMenu[i] == NULL)
             break;
 
+        if (gcap.pmAudio == NULL)
+            break;
+
         CheckMenuItem(GetMenu(ghwndApp), MENU_ADEVICE0 + i,
             (S_OK == gcap.rgpmAudioMenu[i]->IsEqual(gcap.pmAudio)) ? MF_CHECKED : MF_UNCHECKED);
     }
